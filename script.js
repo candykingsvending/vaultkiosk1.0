@@ -102,4 +102,23 @@ document.addEventListener('keydown', resetIdle);
 
 function startCountdown(){
   let timeLeft = countdownTime;
-  const
+  const countdownEl = document.getElementById('countdown');
+  if(!countdownEl) return;
+  countdownEl.style.display='block';
+  countdownEl.innerText=`Resetting to Home in ${timeLeft} seconds`;
+  countdownInterval = setInterval(()=>{
+    timeLeft--;
+    countdownEl.innerText=`Resetting to Home in ${timeLeft} seconds`;
+    if(timeLeft<=0){
+      clearInterval(countdownInterval);
+      window.location.href='index.html';
+    }
+  },1000);
+}
+
+// === Load functions based on page ===
+document.addEventListener('DOMContentLoaded', ()=>{
+  if(document.getElementById('productImage')) loadProduct();
+  if(document.getElementById('cartItems')) loadCart();
+  if(document.getElementById('checkoutForm')) loadCheckout();
+});
