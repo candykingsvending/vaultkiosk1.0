@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vault XIV Product</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="countdown" class="countdown"></div>
+
+<div class="product-page">
+  <button onclick="history.back()">Back</button>
+  <div class="product-detail">
+    <img id="productImage" src="" alt="Product">
+    <div class="product-info">
+      <h2 id="productTitle">Product Name</h2>
+      <p id="productCategory">Category</p>
+      <p id="productDesc">Description</p>
+      <p id="productPrice">$0.00</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
