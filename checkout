@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vault XIV Checkout</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="countdown" class="countdown"></div>
+
+<h1>Checkout</h1>
+<form id="checkoutForm">
+  <label>Name:</label>
+  <input type="text" id="name" required>
+  <label>Email:</label>
+  <input type="email" id="email" required>
+  <label>Delivery Address:</label>
+  <input type="text" id="address" required>
+  <p>Cart Total: $<span id="checkoutTotal">0</span></p>
+  <button type="submit">Pay Now</button>
+</form>
+
+<p id="successMessage" style="display:none;">Order received. We’ll contact you soon.</p>
+
+<script src="script.js"></script>
+</body>
+</html>
