@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vault XIV Cart</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="countdown" class="countdown"></div>
+
+<h1>Your Cart</h1>
+<div id="cartItems"></div>
+<p>Total: $<span id="cartTotal">0</span></p>
+<button onclick="goCheckout()">Checkout</button>
+<button onclick="goHome()">Back to Browse</button>
+
+<script src="script.js"></script>
+</body>
+</html>
