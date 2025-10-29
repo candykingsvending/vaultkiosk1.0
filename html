@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vault XIV Kiosk</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="countdown" class="countdown"></div>
+
+<!-- Home Screen -->
+<div id="home" class="page">
+  <h1>Vault XIV</h1>
+  <p>More Than Luxury — It's a Story</p>
+  <button onclick="showBrowse()">Touch to Enter</button>
+</div>
+
+<!-- Browse Screen -->
+<div id="browse" class="page" style="display:none;">
+  <div class="categories">
+    <button onclick="filterCategory('All')">All</button>
+    <button onclick="filterCategory('Swords')">Swords</button>
+    <button onclick="filterCategory('Pictures')">Pictures</button>
+    <button onclick="filterCategory('Other')">Other</button>
+  </div>
+  <div id="productGrid" class="product-grid">
+    <!-- Product cards inserted here dynamically -->
+  </div>
+  <button onclick="goHome()">Back to Home</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
